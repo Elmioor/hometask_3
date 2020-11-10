@@ -80,5 +80,60 @@
 # print(my_funk_task_four_waytwo(x,y))
 
 # 5. Программа запрашивает у пользователя строку чисел, разделенных пробелом. При нажатии Enter должна выводиться сумма чисел. Пользователь может продолжить ввод чисел, разделенных пробелом и снова нажать Enter. Сумма вновь введенных чисел будет добавляться к уже подсчитанной сумме. Но если вместо числа вводится специальный символ, выполнение программы завершается. Если специальный символ введен после нескольких чисел, то вначале нужно добавить сумму этих чисел к полученной ранее сумме и после этого завершить программу.
+# print("enter data - using space bars  separates elements")
+# string_to_parse_on = input()
+# print(string_to_parse_on)
+# testt_arr = string_to_parse_on.split()
+
+
+print("enter data - using space bars  separates elements")
+string_to_parse_on = input()
+#print(string_to_parse_on)
+testt_arr = string_to_parse_on.split()
+
+def funk_task_five(*arr_elems):
+    for value_z in arr_elems:
+        pass
+        # print(str(value_z[0]))
+        # print(value_z[0])
+        # print(type(value_z[0]))
+        # print("----")
+        # print(type(value_z))
+        # print(value_z)
+        #
+        # print("----")
+        # print(type(int(str(value_z[0]))))
+        # print(int(value_z[0]))
+        #
+        #
+        # print("----")
+        # print(type(str(arr_elems[0])))
+        # print(str(arr_elems[0]))
+        # """print("----") WRONG
+        # print(type(int(str(arr_elems[0]))))
+        # print(int(str(arr_elems[0])))
+        # print("----")"""
+        #
+
+
+
+    #val=int(arr_elems)
+    #print(str(arr_elems))
+    #print(val)
+    ############ CORRECT ############
+    if(value_z[0] == "z"):
+        print("finale")
+    else:
+        print("Not z in line")
+        return None
+funk_task_five(testt_arr)
+
+    #user_input_task_five = input()
+
+    #print(user_input_task_five)
+
+#funk_task_five()
+
+
 # 6. Реализовать функцию int_func(), принимающую слово из маленьких латинских букв и возвращающую его же, но с прописной первой буквой. Например, print(int_func(‘text’)) -> Text.
 # Продолжить работу над заданием. В программу должна попадать строка из слов, разделенных пробелом. Каждое слово состоит из латинских букв в нижнем регистре. Сделать вывод исходной строки, но каждое слово должно начинаться с заглавной буквы. Необходимо использовать написанную ранее функцию int_func().
