@@ -89,51 +89,127 @@
 print("enter data - using space bars  separates elements")
 string_to_parse_on = input()
 #print(string_to_parse_on)
-testt_arr = string_to_parse_on.split()
+list_of_numbers = string_to_parse_on.split()
 
-def funk_task_five(*arr_elems):
-    for value_z in arr_elems:
-        pass
-        # print(str(value_z[0]))
-        # print(value_z[0])
-        # print(type(value_z[0]))
-        # print("----")
-        # print(type(value_z))
-        # print(value_z)
-        #
-        # print("----")
-        # print(type(int(str(value_z[0]))))
-        # print(int(value_z[0]))
-        #
-        #
-        # print("----")
-        # print(type(str(arr_elems[0])))
-        # print(str(arr_elems[0]))
-        # """print("----") WRONG
-        # print(type(int(str(arr_elems[0]))))
-        # print(int(str(arr_elems[0])))
-        # print("----")"""
-        #
+adding_elems = 0
+sum_of_elems = 0
+for el in list_of_numbers:
 
+    if el == 'z'in list_of_numbers:
+        elem_to_pop = list_of_numbers.index('z')
+        i=0
+        #complete_str= ''
 
+        while i < elem_to_pop:
+            sum_of_elems += int(list_of_numbers[i])
+         #   complete_str += list_of_numbers[i]
+            i +=1
 
-    #val=int(arr_elems)
-    #print(str(arr_elems))
-    #print(val)
-    ############ CORRECT ############
-    if(value_z[0] == "z"):
-        print("finale")
+        #print(complete_str)
+
+        #print(sum_of_elems)
+        #print(list_of_numbers)
+
     else:
-        print("Not z in line")
-        return None
-funk_task_five(testt_arr)
+        sum_of_elems += int(el)
+
+
+print(sum_of_elems)
+#print(adding_elems)
+#print(sum_of_elems)
+
+
+# my_list = [[10, 20, 30], [40, 50], [60], [70, 80, 90]]
+# print(sum(my_list, []))
+
+# elem_to_pop = list_of_numbers.index('z')
+#         list_of_numbers.pop(elem_to_pop)
+#         i = 0
+#         while i < elem_to_pop:
+#             sum_of_elems += int(el)
+#         i += 1
+#         print(sum_of_elems)
+#
+#         print(list_of_numbers.index('z'))
+#
+#         print("finale")
+#
+
+
+
+
+#
+# print("enter data - using space bars  separates elements")
+# string_to_parse_on = input()
+# #print(string_to_parse_on)
+# testt_arr = string_to_parse_on.split()
+
+# def getting_input_funk():
+#     print("enter data - using space bars  separates elements")
+#     string_to_parse_on = input()
+#     # print(string_to_parse_on)
+#     testt_arr = string_to_parse_on.split()
+#     while funk_task_five(testt_arr)[1] != "AAA":
+#         funk_task_five(testt_arr)
+#
+#
+# def funk_task_five(*arr_elems):
+#     summ_of_elems =0
+#     for value_z in arr_elems:
+#         i=0
+#         while i < len(value_z):
+#             if (value_z[i] != "z"):
+#                 print("Not z in line")
+#                 summ_of_elems + int(value_z[i])
+#                 return summ_of_elems, None
+#             else:
+#                 print("finale")
+#                 return summ_of_elems, "AAA"
+#
+# getting_input_funk()
+
+# funk_task_five(testt_arr)
+
 
     #user_input_task_five = input()
 
     #print(user_input_task_five)
+#
+#
+# print("---- to list")
+# print(type(value_z))
+# print(value_z)
+#
+# print("---- to int")
+# print(type(int(str(value_z[0]))))
+# print(int(value_z[0]))
+#
+#
+# print("---- to str")
+# print(type(str(arr_elems[0])))
+# print(str(arr_elems[0]))
+# """print("----") WRONG
+# print(type(int(str(arr_elems[0]))))
+# print(int(str(arr_elems[0])))
+# print("----")"""
+#
 
-#funk_task_five()
 
+# val=int(arr_elems)
+# print(str(arr_elems))
+# print(val)
 
 # 6. Реализовать функцию int_func(), принимающую слово из маленьких латинских букв и возвращающую его же, но с прописной первой буквой. Например, print(int_func(‘text’)) -> Text.
 # Продолжить работу над заданием. В программу должна попадать строка из слов, разделенных пробелом. Каждое слово состоит из латинских букв в нижнем регистре. Сделать вывод исходной строки, но каждое слово должно начинаться с заглавной буквы. Необходимо использовать написанную ранее функцию int_func().
+
+# print("please enter a string")
+# user_input = input()
+#
+# def int_funk_task_six_one_word(string_word):
+#     splited_str = string_word.split()
+#     i=0
+#     while i < len(splited_str):
+#         print(splited_str[i].capitalize(), end=' ')
+#         i +=1
+#
+# int_funk_task_six_one_word(user_input)
