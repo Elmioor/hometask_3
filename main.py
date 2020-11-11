@@ -81,32 +81,6 @@
 
 # 5. Программа запрашивает у пользователя строку чисел, разделенных пробелом. При нажатии Enter должна выводиться сумма чисел. Пользователь может продолжить ввод чисел, разделенных пробелом и снова нажать Enter. Сумма вновь введенных чисел будет добавляться к уже подсчитанной сумме. Но если вместо числа вводится специальный символ, выполнение программы завершается. Если специальный символ введен после нескольких чисел, то вначале нужно добавить сумму этих чисел к полученной ранее сумме и после этого завершить программу.
 
-# !!!!!!!!!!!!!!!!! В ступоре, покка не придумал, как доделать, из материалов лекции материалов не хватило
-#
-# print("enter data - using space bars  separates elements")
-# string_to_parse_on = input()
-# #print(string_to_parse_on)
-# list_of_numbers = string_to_parse_on.split()
-#
-# adding_elems = 0
-# sum_of_elems = 0
-# for el in list_of_numbers:
-#
-#     if el == 'z'in list_of_numbers:
-#         elem_to_pop = list_of_numbers.index('z')
-#         i=0
-#
-#         while i < elem_to_pop:
-#             sum_of_elems += int(list_of_numbers[i])
-#
-#             i +=1
-#
-#     else:
-#         sum_of_elems += int(el)
-#
-#
-# print(sum_of_elems)
-
 Exit = False
 summ = 0
 
